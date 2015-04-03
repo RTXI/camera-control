@@ -17,36 +17,33 @@
  */
 
 #include <default_gui_model.h>
+#include <QtGui>
 
-class CameraCtl : public DefaultGUIModel
-{
+class CameraCtl : public DefaultGUIModel {
 
-public:
+	public:
+		CameraCtl(void);
+		virtual ~CameraCtl(void);
+		virtual void execute(void);
 
-    CameraCtl(void);
-    virtual ~CameraCtl(void);
+	protected:
+		virtual void update(DefaultGUIModel::update_flags_t);
 
-    virtual void execute(void);
+	private:
+		int NumFrames;
+		int FrameCount;
+		int FrameRate;
 
-protected:
-
-    virtual void update(DefaultGUIModel::update_flags_t);
-
-private:
-    int NumFrames;
-    int FrameCount;
-    int FrameRate;
-    
-    double duration;
-    int durationCount;
-    double LampDelay;
-    int LampDelayCount;
-    double CameraDelay;
-    int CameraDelayCount;
-    double CameraDuration;
-    int CameraDurationCount;
-    long long count;
-    int DelayCount;
-    double OffFrameDelay;
-    int OffFrameStartCount;
+		double duration;
+		int durationCount;
+		double LampDelay;
+		int LampDelayCount;
+		double CameraDelay;
+		int CameraDelayCount;
+		double CameraDuration;
+		int CameraDurationCount;
+		long long count;
+		int DelayCount;
+		double OffFrameDelay;
+		int OffFrameStartCount;
 };

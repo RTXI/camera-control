@@ -1,9 +1,9 @@
-PLUGIN_NAME = camera_control
+PLUGIN_NAME = CameraCtl
 
-HEADERS = camera-control.h
+HEADERS = CameraCtl.h
 
-SOURCES = camera-control.cpp\
-          moc_camera-control.cpp
+SOURCES = CameraCtl.cpp\
+          moc_CameraCtl.cpp
 
 LIBS = 
 

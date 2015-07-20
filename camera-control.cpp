@@ -88,7 +88,7 @@ CameraCtl::CameraCtl(void) : DefaultGUIModel("Camera Control",::vars,::num_vars)
 	update(INIT);
 	count = 0;
 	refresh();
-	QTimer::singleShot(0, this, SLOT(resizeMe()));
+	resizeMe();
 }
 
 CameraCtl::~CameraCtl(void) {}

@@ -17,7 +17,6 @@
  */
 
 #include <default_gui_model.h>
-#include <QtGui>
 
 class CameraCtl : public DefaultGUIModel {
 

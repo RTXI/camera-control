@@ -2,6 +2,9 @@
 *.swp
 *~
 
+# Exclude Qt moc files
+moc_*
+
 # Compiled Object files
 *.slo
 *.lo
